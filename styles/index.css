@@ -9,10 +9,15 @@ header {
 	width:auto; margin:auto; background:#FF5F00;
 	}
 
-article {
-	width: 800px; margin:auto; background:#FFFBF0; overflow:hidden;
-	}
+menu {height: 70px; margin-bottom: 25px; }
+menu li {list-style: none; }
 
+article {overflow: hidden;}
+article h3 {color:#00F; margin-bottom: 20px; font-size:20px;}
+article p {line-height: 20px; font-size: 15px; margin-bottom:10px;}
+article li {font-size: 15px;}
+article .left {width: 400px; float:left; }
+article .right {width: 580px; float: right; }
 footer {
-	width: 800px; margin:auto; background:#FF5F00;
+	width: auto; margin:auto; background:#FF5F00;
 	}
