@@ -5,14 +5,15 @@ body {
 	background: #FFDFAA; font-family:Arial, Helvetica, sans-serif;
 	}
 
-header {
-	width:auto; margin:auto; background:#FF5F00;
-	}
+header {width: 990px; height:120px; overflow: hidden; margin-bottom:10px; }
+header .headerLeft { width:400px; float:left; margin: 10px 0 0 10px; }
+header .headerRight {width:580px; float:right ;  }
+.headerRight ul {list-style: none; }
+.headerRight ul li {float: left; }
+.headerRight ul li a {line-height:120px; text-decoration:none; padding: 0 20px; display:inline-block;}
+.headerRight ul li a:hover {background-color:white;}
 
-menu {height: 70px; margin-bottom: 25px; }
-menu li {list-style: none; }
-
-article {overflow: hidden;}
+article {width: 990px; overflow: hidden;}
 article h3 {color:#00F; margin-bottom: 20px; font-size:20px;}
 article p {line-height: 20px; font-size: 15px; margin-bottom:10px;}
 article li {font-size: 15px;}
