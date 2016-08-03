@@ -4,9 +4,9 @@
 body {
 	background: #FFDFAA; font-family:Arial, Helvetica, sans-serif;
 	}
-
+.container {width: 1100px; margin: auto; }
 header {width: 990px; height:120px; overflow: hidden; margin-bottom:10px; }
-header .headerLeft { width:400px; float:left; margin: 10px 0 0 10px; }
+header .headerLeft { width:400px; float:left; margin: 10px 0 0 10px; text-align:center; }
 header .headerRight {width:580px; float:right ;  }
 .headerRight ul {list-style: none; }
 .headerRight ul li {float: left; }
@@ -15,7 +15,7 @@ header .headerRight {width:580px; float:right ;  }
 
 article {width: 990px; overflow: hidden;}
 article h3 {color:#00F; margin-bottom: 20px; font-size:20px;}
-article p {line-height: 20px; font-size: 15px; margin-bottom:10px;}
+article p {line-height: 20px; font-size: 15px; margin-bottom:10px; text-align:justify;}
 article li {font-size: 15px;}
 article .left {width: 400px; float:left; }
 article .right {width: 580px; float: right; }
