@@ -17,8 +17,8 @@ article {width: 990px; overflow: hidden;}
 article h3 {color:#00F; margin-bottom: 20px; font-size:20px;}
 article p {line-height: 20px; font-size: 15px; margin-bottom:10px; text-align:justify;}
 article li {font-size: 15px;}
-article .left {width: 400px; float:left; }
-article .right {width: 580px; float: right;margin: 0 0 0 10px; text-align:center; }
+article .left {width: 450px; float:left; }
+article .right {width: 550px; float: right;margin: 0 0 0 10px;}
 footer {
 	width: auto; margin:auto; background:#FF5F00; text-align:center;
 	}
