@@ -12,6 +12,12 @@ header .headerLeft {
     margin: 0;
     text-align: center;
 }
+.headerLeft img {
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+    float: left;
+}
 header .headerRight {
     width: 70%;
     float: right;
