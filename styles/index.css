@@ -29,8 +29,22 @@ article {width: 990px; overflow: hidden;}
 article h3 {color:#00F; margin-bottom: 20px; font-size:20px;}
 article p {line-height: 20px; font-size: 15px; margin-bottom:10px; text-align:justify;}
 article li {font-size: 15px;}
-article .left {width: 430px; float:left; }
-article .right {width: 550px; float: right;margin: 0 0 0 10px;}
+article .left {
+    width: 65%;
+    float: left;
+}
+article .right {
+    width: 30%;
+    float: right;
+    margin-left: 5%;
+}
+article .right img {
+   width: 100%;
+    height: auto;}
+input, select {
+  display:block;
+  width: 100%
+}
 footer {
 	width: auto; margin:auto; background:#FF5F00; text-align:center;
 	}
