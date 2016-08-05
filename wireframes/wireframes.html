@@ -7,7 +7,7 @@
 	
     
 	.container { margin: auto;}
-    header { height:150px; overflow: hidden; margin-bottom:10px; }
+    header { height:150px; overflow: hidden;  }
 	header .headerLeft {
     width: 20%;
     float: left;
@@ -51,34 +51,57 @@
     h6 { 
     	color: black; padding-left: 20px;
     }
-    img {width: 100%; height: auto;}
+    img {}
     a { color: orange; }
     p { color: black; font-size: 15px; padding: 5px 25px;}
+    
+    #prolog {background: grey; margin-top: 0px; }
+    #prolog h2 {background: #B2BEB5; height: 50px; line-height: 50px; }
+    #prolog p {text-align: center; }
+    
+    #main {background: yellow; }
 </style>
 </head>
 
 <body>
-	<div class="container">
+<div class="container">
         
-        <header>
+  <header>
             <div class="headerLeft">
                 <img src="../news/images/logo.jpg" width="100" height="100"><a href="index.html"></a>
             </div>  
     
             <div class="headerRight">
                 <ul>
-                    <li> <a href="../news/news/first-news.html" >News</a> </li>
+                    <li> <a href="../news/first-news.html" >News</a> </li>
                     <li> <a href="../blog/2016-08-04_first-story.html">Story</a> </li>
-                    <li> <a href="web-dev.html">Web-Dev</a> </li>
+                    <li> <a href="../web-dev.html">Web-Dev</a> </li>
                     <li> <a href="wireframes.html">Wireframing</a> </li>
-                    <li> <a href="../">Web-Design</a> </li>
+                    <li> <a href="../web-design.html">Web-Design</a> </li>
                     <li> <a href="../web-eva.html">Web-Evaluation</a> </li>
                   	<li> <a href="../core-values.html">Core-Values</a> </li>
                  	<li> <a href="../reflection.html">Reflection</a> </li>
                  
                 </ul>
             </div>
-        </header>
-	</div>
+    </header>
+    <div id="prolog">
+    	<h2>Jabarkan masalah apa yang halaman web tersebut ingin pecahkan melalui tampilan visual?</h2>
+        <p>Dalam web page ini, Techsmith ingin menampilkan produk-produk yang dimiliki, promosi, tutorial produk dan komunitas, serta link untuk terhubung dengan akun sosial media perusahaan.</p>
+        <p>- Produk terbaru dari Techsmith -</p>
+        <p>- Halaman pembelian produk Techsmith -</p>
+        <p>- Harga khusus untuk pembelian beberapa lisence -</p>
+        <p>- Support dan komunitas -</p>
+        <p>- Menu lengkap -</p>
+        <p>- Terhubung dengan sosial media Techsmith -</p>
+    </div>
+    <div id="main">
+        <h1><img src="../images/tech.jpg" width="100px" height="25px"></h1>
+        
+        <h1>Wireframing TechSmith</h1>
+        <img src="../images/wire.jpg" width="100%" height="auto">
+    </div>
+    
+  </div>
 </body>
 </html>
