@@ -6,10 +6,10 @@
 <style>
 	
     
-	.container {width: 990px; margin: auto;}
-    header {width: 990px; height:150px; overflow: hidden; margin-bottom:10px; }
+	.container {width: 1100px; margin: auto;}
+    header {width: 1100px; height:150px; overflow: hidden; margin-bottom:10px; }
 	header .headerLeft {
-    width: 30%;
+    width: 10%;
     float: left;
     margin: 0;
     text-align: center;
@@ -23,7 +23,7 @@
     float: left;
 }
 	header .headerRight {
-    width: 70%;
+    width: 85%;
     height: 100px;
     float: right;
 }
@@ -35,23 +35,27 @@
     padding: 15px 20px;
     display: inline-block;
 	}	
-    .headerRight ul li a:hover {background-color:white;}
+    .headerRight ul li a:hover {
+	background-color: white;
+	font-size: 12px;
+	font-family: "Comic Sans MS", cursive;
+}
     
-    body {background: orange; width: auto; margin-left: 20px; }
+    body {background: yellow; width: auto; margin-left: 20px; }
 	h1 {
-    	color: blue;
+    	color: blue; margin-left: 5px;
     }
     h2 {
-    	color: red;
+    	color: red; margin-left: 5px;
     }
     h3 {
-    	color: green;
+    	color: green; margin-left: 5px;
     }
     h4 {
-    	color: blue; margin-bottom: 10px;
+    	color: blue;  margin-left: 5px;
     }
     h6 { 
-    	color: orange;
+    	color: orange; margin-left: 5px;
     }
     #satu {padding: auto; height: 600px; margin: 10px 10px 10px 10px; }
     #satuKiri { width: 40%; height: auto; float: left; }
@@ -73,13 +77,18 @@
     #empatKanan img{ width: 100%; height: 600px; }
     #empatKanan { width: 40%; float: right; }
     
-    #lima {padding: auto; height: 600px; margin: 10px 10px 10px 10px; }
+    #lima {height: 600px; margin: 10px 10px 10px 10px;  }
     #limaKiri { width: 40%; height: auto; float: left; }
-    #limaKiri img{ width: 100%; height: 600px; }
+    #limaKiri img{ width: 100%; height: 600px;}
     #limaKanan { width: 60%; float: right; }
     
     a { color: blue; }
-    p { color: black; font-size: 20px;}
+    p {
+	color: black;
+	font-size: 20px;
+	margin-left: 5px;
+	font-family: "Lucida Console", Monaco, monospace;
+}
 </style>
 </head>
 
@@ -92,11 +101,15 @@
     
             <div class="headerRight">
                 <ul>
-                    <li> <a href="news/first-news.html" >News</a> </li>
-                    <li> <a href="">Story</a> </li>
-                    <li> <a href="">Service</a> </li>
-                    <li> <a href="">Gallery</a> </li>
-                    <li> <a href="">Contact</a> </li>
+                    <li> <a href="../news/first-news.html" >News</a> </li>
+                    <li> <a href="blog/2016-08-04_first-story.html">Story</a> </li>
+                    <li> <a href="../web-dev.html">Web-Dev</a> </li>
+                    <li> <a href="../wireframes.html">Wireframing</a> </li>
+                    <li> <a href="../web-design.html">Web-Design</a> </li>
+                    <li> <a href="../web-eva.html">Web-Evaluation</a> </li>
+                  	<li> <a href="../core-values.html">Core-Values</a> </li>
+                 	<li> <a href="../reflection.html">Reflection</a> </li>
+                 
                 </ul>
             </div>
         </header>
