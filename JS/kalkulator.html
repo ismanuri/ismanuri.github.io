@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8" />
+<title>kalkulator</title>
+</head>
+
+<body>
+	<div>
+    	<input id="a" type="text"/>
+        <input id="b" type="text"/>
+        <input type="button" onclick="sum()" value="sum"/>
+        <input type="button" onclick="rest()" value="rest"/>
+        <input type="button" onclick="mult()" value="mult"/>
+        <input type="button" onclick="div()" value="div"/>
+    </div>
+<script type="text/javascript">
+	var a,b,result:
+    
+    function setValues(){
+    	a = Number(document.getElementById("a").value);
+        b = Number(document.getElementById("b").value);
+    }
+    function sum(){
+    	setValues();
+        result = a+b;
+        alert("Penjumlahan angka tersebut sama dengan "+result);
+    }
+    function rest(){
+    	setValues();
+        result = a-b;
+        alert("Pengurangan angka tersebut sama dengan "+result);
+    }
+    function mult(){
+    	setValues();
+        result = a*b;
+        alert("Perkalian angka tersebut sama dengan "+result);
+    }
+    function div(){
+    	setValues();
+        result = a/b;
+        alert("Pembagian angka tersebut sama dengan "+result);
+    }
+    
+
+
+}
+
+</body>
+</html>
