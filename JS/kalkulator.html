@@ -3,19 +3,9 @@
 <head>
 <meta charset=utf-8" />
 <title>kalkulator</title>
-</head>
-
-<body>
-	<div>
-    	<input id="a" type="text"/>
-        <input id="b" type="text"/>
-        <input type="button" onclick="sum()" value="sum"/>
-        <input type="button" onclick="rest()" value="rest"/>
-        <input type="button" onclick="mult()" value="mult"/>
-        <input type="button" onclick="div()" value="div"/>
-    </div>
-<script type="text/javascript">
-	var a,b,result:
+	<script type="text/javascript">
+	
+    var a,b,result:
     
     function setValues(){
     	a = Number(document.getElementById("a").value);
@@ -44,7 +34,18 @@
     
 
 
-}
 
+</script>
+</head>
+
+<body>
+	<div>
+    	<input id="a" type="text"/>
+        <input id="b" type="text"/>
+        <input type="button" onclick="sum()" value="sum"/>
+        <input type="button" onclick="rest()" value="rest"/>
+        <input type="button" onclick="mult()" value="multiply"/>
+        <input type="button" onclick="div()" value="divide"/>
+    </div>
 </body>
 </html>
