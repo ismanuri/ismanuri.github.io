@@ -1,8 +1,8 @@
-var DaftarKontak = ({
+var DaftarKontak = [{
 	nama: "Ismanuri",
 	email: "isman@mail.com",
 	telepon: "08123456"
-	});
+	}];
 
 
 
