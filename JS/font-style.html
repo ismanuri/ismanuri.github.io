@@ -3,11 +3,16 @@
 <head>
 <meta charset=utf-8" />
 <title>pelangi</title>
-	<script type="text/javascript">
+	<script>
 
+        function makeBold() {
+            document.getElementById("demo").style.fontStyle = "normal";
+            document.getElementById("demo").style.fontWeight = "1000";
+        }
         function makeItalic() {
-            document.getElementById("demo").text.style = "italic";
-        };
+            document.getElementById("demo").style.fontWeight = "400";
+            document.getElementById("demo").style.fontStyle = "italic";
+        }
 
 
     </script>
@@ -15,8 +20,7 @@
 
 <body>
 	<div>
-        <p id="demo">Hari ini hari Kemerdekaan RI</p>
-        <input type="button" onclick="makeItalic()" value="Jadikan Bold"/>
+        <span id="demo" onmouseover="makeBold()" onmouseout="makeItalic()">Hari ini hari Kemerdekaan RI</span>
     </div>
 </body>
 </html>
