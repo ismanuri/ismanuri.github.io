@@ -3,21 +3,57 @@
 <head>
 <meta charset=utf-8" />
 <title>Tebak angka</title>
-	<script type="text/javascript">
-
-        function 
-        };
-
-
-    </script>
+	
 </head>
 
 <body>
 	<div>
-        <p id="demo"></p>
-        <p>
-        </p>
-        <input type="button" onclick="berubah()" value="Jadikan Pelangi"/>
+          <header>
+            <h2>Tebak Angka</h2>
+            <p>Seberapa beruntung kamu menebak angka 1-10?</p>
+            <br>
+            Nyawa kamu tinggal <div id="nyawa"></div>
+            <br>
+            <input id="input" type="textbox" size="5" >
+            <br><br>
+            <input type="button" onclick="tebak()" value="Tebak">
+
+            <br><br>
+            <div id="hasil"></div>
+          </header>
     </div>
+
+        <script>
+            var jawaban = 0;
+            var nyawa = 5;
+        function start(){
+          nyawa = 5;
+          jawaban = Math.floor(Math.random() * (10 - 1)) + 1;
+          document.getElementById("nyawa").innerHTML = nyawa;
+        };
+        function tebak(){
+          var input = document.getElementById("input").value;
+          if(input>jawaban){
+            nyawa--;
+            document.getElementById("nyawa").innerHTML = nyawa;
+            document.getElementById("hasil").innerHTML = "Coba angka lebih kecil!!! ";
+          }
+          else if(input<jawaban){
+            nyawa--;
+            document.getElementById("nyawa").innerHTML = nyawa;
+            document.getElementById("hasil").innerHTML = "Angka kamu kurang sedikit lagi!!! ";
+          }
+          else if(input==jawaban){
+            document.getElementById("hasil").innerHTML = "Selamat kamu benar kali ini!!!";
+          }
+          if(nyawa==0){
+            document.getElementById("hasil").innerHTML = "Kesempatan habis, Coba dari awal lagi.";
+            mulai();
+          }
+        };
+        </script>
+
+
+
 </body>
 </html>
