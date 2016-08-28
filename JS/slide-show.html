@@ -3,22 +3,59 @@
 <head>
 <meta charset=utf-8" />
 <title>Slide show</title>
-	<script type="text/javascript">
-
-        function berubah() {
-        };
-
-
-    </script>
+	
 </head>
 
 <body>
-	<div>
-        <p>Programming Meme dulu, biar kodingnya bisa senyum</p>
-        <img src="../images/noerror.jpg" width=""height="" >
-        <img src="../images/cplus.jpg" width=""height="" >
-        <img src="../images/dodoes.jpg" width=""height="" >
+	
+        
+    <p>Meme dulu, biar kodingnya bisa senyum</p>   
 
+    <div>
+    <img id="image" src="../images/noerror.jpg" width="400" height="350" >
+    <!--  <img src="../images/cplus.jpg" width="30%" height="auto" >
+    <img src="../images/dodoes.jpg" width="30%" height="auto" > -->
     </div>
+    <br/>
+    <button class="button" onclick=mundur();>Mundur</button>       
+    <button class="button" onclick=maju();>Maju</button>
+        
+    
+
+    <script>
+
+        var src = new Array ("../images/noerror.jpg", "../images/cplus.jpg", "../images/dodoes.jpg");
+        var currentImage = src[0];
+        var currentIndex = 0;
+
+        function mulai(){
+            console.log("currentImage: "+currentImage.split("/"),pop());
+
+        };
+
+        function mundur() {
+            currentIndex--;
+            if(currentIndex==-1){
+            alert("Tidak ada gambar lagi!");
+            currentIndex=0;
+            }
+        document.getElementById("image").src = src[currentIndex];
+        };
+
+        function maju() {
+            currentIndex++;
+            if(currentIndex==3){
+            alert("Tidak ada gambar lagi!");
+            currentIndex=2;
+            }
+        document.getElementById("image").src = src[currentIndex];
+        };
+
+        
+
+
+
+    </script>
 </body>
 </html>
+
